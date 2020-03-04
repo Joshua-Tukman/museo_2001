@@ -40,9 +40,6 @@ class Curator
     prolific_artists
   end
 
-  # def artist_origin(country)
-  #
-  # end
   def photographs_taken_by_artist_from(country)
     photos = []
     photographs_by_artist.each do |artist, photo|
