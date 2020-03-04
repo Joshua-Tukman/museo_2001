@@ -18,4 +18,9 @@ class ArtistTest < Minitest::Test
     assert_equal "1984", artist_1.died
     assert_equal "United States", artist_1.country
   end
+
+  def test_it_can_calculate_age_at_death
+    artist_1 = Artist.new({id: "2", name: "Ansel Adams", born: "1902", died: "1984", country: "United States"})
+    assert_equal 82, artist_1.age_at_death
+  end
 end
